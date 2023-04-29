@@ -1,0 +1,11 @@
+pipeline{
+    agent any
+    stages{
+        stage("Git Checkout"){
+            steps{
+                git branch: 'main', credentialsId: '54b18793-73d3-4d9d-b7fa-33459ec062e5', url: 'https://github.com/srk1295/MavenProject.git'
+            }
+        }
+            
+        }
+}
